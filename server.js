@@ -3,9 +3,10 @@ const app = express();
 const port = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 require('dotenv').config();
-// const user = require('./routes/api/user')
-// const profile = require('./routes/api/profile')
-// const post = require('./routes/api/post')
+const passport = require('passport');
+require('./models/User');
+require('./config/passport')(passport);
+
 // moongose config
 mongoose.Promise = global.Promise;
 // connect to mongoose
@@ -17,6 +18,11 @@ mongoose
   .catch(err => {
     console.log(`Error: ${err}`);
   });
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.use(passport.initialize());
 
 // use routes
 app.use('/api/users', require('./routes/api/user'));
