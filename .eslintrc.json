@@ -16,9 +16,15 @@
   },
   "parser": "babel-eslint",
   "rules": {
-    "indent": ["error", 2],
+    "indent": [
+      "error",
+      2
+    ],
     "no-tabs": 0,
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "quotes": [
       "error",
       "single",
@@ -26,8 +32,12 @@
         "avoidEscape": true
       }
     ],
-    "semi": ["error", "always"],
+    "semi": [
+      "error",
+      "always"
+    ],
     "import/newline-after-import": 0,
+    "no-param-reassign": 0,
     "no-console": "off",
     "prettier/prettier": [
       "error",
@@ -37,5 +47,9 @@
     ],
     "comma-dangle": 0
   },
-  "plugins": ["security", "import", "prettier"]
+  "plugins": [
+    "security",
+    "import",
+    "prettier"
+  ]
 }
