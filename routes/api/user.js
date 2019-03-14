@@ -4,7 +4,6 @@ const gravatar = require('gravatar');
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const User = require('../../models/User');
-
 const validateRegisterInput = require('../../validation/register');
 const validateLoginInput = require('../../validation/login');
 
@@ -86,7 +85,7 @@ router.post('/login', async (req, res) => {
     }
     const payload = { id: user.id, name: user.name, avatar: user.avatar };
     jwt.sign(payload, process.env.JWTKEY, { expiresIn: 3600 }, (err, token) => {
-      res.json({ success: true, token: `Bearer ${token}` });
+      return res.json({ success: true, token: `Bearer ${token}` });
     });
     // return res.status(200).json({ msg: 'success' });
 
