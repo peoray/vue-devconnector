@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const passport = require('passport');
-const jwt = require('jsonwebtoken');
+// const jwt = ('jsonwebtoken');
 const Profile = require('../../models/Profile');
-const User = require('../../models/User');
+// const User = require('../../models/User');
 const validateProfileInput = require('../../validation/profile');
 const validateExperienceInput = require('../../validation/experience');
 const validateEducationInput = require('../../validation/education');
