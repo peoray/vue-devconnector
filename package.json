@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "npm install --prefix client",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "engines": {
     "node": ">= 7.6.0"
@@ -15,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "gravatar": "^1.8.0",
