@@ -3,6 +3,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 require('dotenv').config();
+const cors = require('cors');
 const passport = require('passport');
 require('./models/User');
 require('./config/passport')(passport);
@@ -21,6 +22,8 @@ mongoose
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use(cors());
 
 app.use(passport.initialize());
 
