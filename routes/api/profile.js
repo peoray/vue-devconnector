@@ -2,7 +2,7 @@ const router = require('express').Router();
 const passport = require('passport');
 // const jwt = ('jsonwebtoken');
 const Profile = require('../../models/Profile');
-// const User = require('../../models/User');
+const User = require('../../models/User');
 const validateProfileInput = require('../../validation/profile');
 const validateExperienceInput = require('../../validation/experience');
 const validateEducationInput = require('../../validation/education');
@@ -149,11 +149,6 @@ router.post(
       if (instagram) profileFields.social.instagram = instagram;
 
       if (bio) profileFields.bio = bio;
-      if (bio) profileFields.bio = bio;
-      if (bio) profileFields.bio = bio;
-      if (bio) profileFields.bio = bio;
-      if (bio) profileFields.bio = bio;
-      if (bio) profileFields.bio = bio;
 
       // check to see if user has id
       const profile = await Profile.findOne({ user: id });
@@ -166,10 +161,8 @@ router.post(
         );
         return res.status(200).json(updateProfile);
       }
-      console.log('1');
       // check for handl
       const profileHandle = await Profile.findOne({ handle });
-      console.log('1');
       // if it exists
       if (profileHandle) {
         errors.handle = 'That handle already exist!';
@@ -358,7 +351,7 @@ router.delete(
         errors.noprofile = 'There is no profile for this user';
         return res.status(404).json(errors);
       }
-
+      // await User.findOneAndDelete({ _id: id });
       return res.status(200).json({ success: true });
     } catch (error) {
       console.log(error);
