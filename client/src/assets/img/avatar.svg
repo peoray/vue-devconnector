@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Mask" cx="27.5" cy="27.5" r="27.5" fill="#d8d8d8" stroke="#979797" stroke-miterlimit="10" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Rectangle_15_Line_Line_3_Copy_49" data-name="Rectangle 15 + Line + Line 3 Copy 49" transform="translate(0.5 0.5)">
+    <circle id="Mask-2" data-name="Mask" cx="27.5" cy="27.5" r="27.5" fill="#d8d8d8" stroke="#979797" stroke-miterlimit="10" stroke-width="1"/>
+    <g id="Rectangle_15_Line_Line_3_Copy_49-2" data-name="Rectangle 15 + Line + Line 3 Copy 49" clip-path="url(#clip-path)">
+      <path id="Shape" d="M0,50.682V45.54A5.173,5.173,0,0,1,4.136,41.4s6.122-2.235,10.917-4.323c2.48-1.079,3.014-1.727,5.515-2.832a8.387,8.387,0,0,0,.167-2.049h1.957s.447.261,0-2.758c0,0-2.385-.633-2.5-5.44,0,0-1.791.6-1.9-2.31-.075-1.975-1.6-3.689.6-5.1L17.774,13.57s-2.235-12.184,4.192-10.4c-2.711-3.242,15.37-6.483,16.544,3.8,0,0,.837,5.552,0,9.353,0,0,2.641-.306.875,4.77,0,0-.969,3.652-2.459,2.832,0,0,.243,4.62-2.1,5.4,0,0,.167,2.459.167,2.626l2.237.335s-.336,2.012.056,2.235a20.8,20.8,0,0,0,5.812,2.628c6.093,1.564,13.3,4.247,13.3,6.595a40.113,40.113,0,0,1,.615,6.93Z" transform="translate(-0.639 7.127)"/>
+    </g>
+  </g>
+</svg>
