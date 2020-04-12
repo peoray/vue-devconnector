@@ -37,11 +37,14 @@ export default {
 };
 </script>
 
-<style>
-@import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import './assets/index.css';
-@import './assets/App.css';
+<style lang="scss">
+// @import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// @import './assets/index.css';
+// @import './assets/App.css';
 div .invalid-feedback {
   display: block;
+}
+#app {
+  // background: $color-red;
 }
 </style>
